@@ -16,8 +16,6 @@ import './header.styles.scss'
 
 const Header = () => {
   const currentUser = useContext(CurrentUserContext)
-  const [hidden, setHidden] = useState(true)
-  const toggleHidden = () => setHidden(!hidden)
 
   return (
     <div className='header'>
