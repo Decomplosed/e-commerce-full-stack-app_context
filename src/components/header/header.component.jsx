@@ -16,6 +16,7 @@ import './header.styles.scss'
 
 const Header = () => {
   const currentUser = useContext(CurrentUserContext)
+  const { hidden } = useContext(CartContext)
 
   return (
     <div className='header'>
