@@ -40,7 +40,14 @@ const Header = () => {
             SIGN IN
           </Link>
         )}
-        <CartIcon />
+        <CartContext.Provider
+          value={{
+            hidden,
+            toggleHidden
+          }}
+        >
+          <CartIcon />
+        </CartContext.Provider>
       </div>
       {hidden ? null : <CartDropdown />}
     </div>
