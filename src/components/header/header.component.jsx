@@ -14,8 +14,10 @@ import { CartContext } from '../../contexts/cart/cart.context'
 
 import './header.styles.scss'
 
-const Header = ({ hidden }) => {
+const Header = () => {
   const currentUser = useContext(CurrentUserContext)
+  const [hidden, setHidden] = useState(true)
+
   return (
     <div className='header'>
       <Link className='logo-container' to='/'>
