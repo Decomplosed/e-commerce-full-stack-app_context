@@ -12,7 +12,7 @@ const CartContext = createContext({
   cartItemsCount: 0
 })
 
-const CartProvider = ({ children }) => {
+export const CartProvider = ({ children }) => {
   const [hidden, setHidden] = useState(true)
   const [cartItems, setCartItems] = useState([])
   const [cartItemsCount, setCartItemsCount] = useState(0)
