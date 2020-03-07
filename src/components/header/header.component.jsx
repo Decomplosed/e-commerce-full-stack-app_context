@@ -10,13 +10,14 @@ import { selectCartHidden } from '../../redux/cart/cart.selectors'
 
 import { ReactComponent as Logo } from '../../assets/crown.svg'
 import CurrentUserContext from '../../contexts/current-user/current-user.context'
-import { CartContext } from '../../contexts/cart/cart.context'
+import CartContext from '../../contexts/cart/cart.context'
 
 import './header.styles.scss'
 
 const Header = () => {
   const currentUser = useContext(CurrentUserContext)
   const [hidden, setHidden] = useState(true)
+  const toggleHidden = () => setHidden(!hidden)
 
   return (
     <div className='header'>
