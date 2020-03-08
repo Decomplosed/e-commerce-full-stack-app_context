@@ -1,6 +1,10 @@
 import React, { createContext, useState, useEffect } from 'react'
 
-import { addItemToCart, removeItemFromCart } from './cart.utils'
+import {
+  addItemToCart,
+  removeItemFromCart,
+  filterItemFromCart
+} from './cart.utils'
 
 export const CartContext = createContext({
   hidden: true,
@@ -24,7 +28,14 @@ const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      value={{ hidden, toggleHidden, cartItems, addItem, removeItem, cartItemsCount }}
+      value={{
+        hidden,
+        toggleHidden,
+        cartItems,
+        addItem,
+        removeItem,
+        cartItemsCount
+      }}
     >
       {children}
     </CartContext.Provider>
