@@ -1,6 +1,4 @@
 import React, { useContext } from 'react'
-import { connect } from 'react-redux'
-
 import { CartContext } from '../../providers/cart/cart.provider'
 import './checkout-item.styles.scss'
 
@@ -23,11 +21,14 @@ const CheckoutItem = ({ cartItem }) => {
         </div>
       </span>
       <span className='price'>{price}</span>
-      <div className='remove-button' onClick={() => clearItemFromCart(cartItem)}>
+      <div
+        className='remove-button'
+        onClick={() => clearItemFromCart(cartItem)}
+      >
         &#10005;
       </div>
     </div>
   )
 }
 
-export default connect(null, mapDispatchToProps)(CheckoutItem)
+export default CheckoutItem
