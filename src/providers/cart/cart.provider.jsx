@@ -28,6 +28,10 @@ const CartProvider = ({ children }) => {
   const clearItemFromCart = item =>
     setCartItems(filterItemFromCart(cartItems, item))
 
+  useEffect(() => {
+    setCartItemsCount(getCartItemsCount(cartItems))
+  }, [cartItems])
+
   return (
     <CartContext.Provider
       value={{
