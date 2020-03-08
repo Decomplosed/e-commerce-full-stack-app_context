@@ -24,7 +24,8 @@ const CartProvider = ({ children }) => {
   const addItem = item => setCartItems(addItemToCart(cartItems, item))
   const removeItem = item => setCartItems(removeItemFromCart(cartItems, item))
   const toggleHidden = () => setHidden(!hidden)
-  const clearItemFromCart = item => setCartItems(filterItemFromCart(cartItems, item))
+  const clearItemFromCart = item =>
+    setCartItems(filterItemFromCart(cartItems, item))
 
   return (
     <CartContext.Provider
@@ -34,6 +35,7 @@ const CartProvider = ({ children }) => {
         cartItems,
         addItem,
         removeItem,
+        clearItemFromCart,
         cartItemsCount
       }}
     >
