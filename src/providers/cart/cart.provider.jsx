@@ -3,7 +3,8 @@ import React, { createContext, useState, useEffect } from 'react'
 import {
   addItemToCart,
   removeItemFromCart,
-  filterItemFromCart
+  filterItemFromCart,
+  getCartItemsCount
 } from './cart.utils'
 
 export const CartContext = createContext({
