@@ -45,7 +45,8 @@ const CartProvider = ({ children }) => {
         addItem,
         removeItem,
         clearItemFromCart,
-        cartItemsCount
+        cartItemsCount,
+        cartTotal
       }}
     >
       {children}
