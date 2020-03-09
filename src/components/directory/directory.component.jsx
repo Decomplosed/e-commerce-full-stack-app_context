@@ -5,6 +5,7 @@ import DirectoryContext from '../../contexts/directory/directory.context'
 import './directory.styles.scss'
 
 const Directory = () => {
+  const sections = useContext(DirectoryContext)
   return (
     <div className='directory-menu'>
       {sections.map(({ id, ...otherSectionProps }) => (
