@@ -12,13 +12,9 @@ import App from './App'
 
 ReactDOM.render(
   <CartProvider>
-    <Provider store={store}>
-      <BrowserRouter>
-        <PersistGate persistor={persistor}>
-          <App />
-        </PersistGate>
-      </BrowserRouter>
-    </Provider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </CartProvider>,
   document.getElementById('root')
 )
