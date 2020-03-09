@@ -33,6 +33,7 @@ const CartProvider = ({ children }) => {
 
   useEffect(() => {
     setCartItemsCount(getCartItemsCount(cartItems))
+    setCartTotal(getCartTotal(cartItems))
   }, [cartItems])
 
   return (
