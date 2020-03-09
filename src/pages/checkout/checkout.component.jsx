@@ -10,8 +10,8 @@ import { selectCartTotal } from '../../redux/cart/cart.selectors'
 
 import './checkout.styles.scss'
 
-const CheckoutPage = ({ total }) => {
-  const { cartItems } = useContext(CartContext)
+const CheckoutPage = () => {
+  const { cartItems, cartTotal } = useContext(CartContext)
   return (
     <div className='checkout-page'>
       <div className='checkout-header'>
