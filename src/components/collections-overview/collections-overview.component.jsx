@@ -1,11 +1,6 @@
 import React, { useContext } from 'react'
-import { connect } from 'react-redux'
 import CollectionsContext from '../../contexts/collections/collections.context'
-import { createStructuredSelector } from 'reselect'
-
 import CollectionPreview from '../collection-preview/collection-preview.component'
-
-import { selectCollectionsForPreview } from '../../redux/shop/shop.selectors'
 
 import './collections-overview.styles.scss'
 
