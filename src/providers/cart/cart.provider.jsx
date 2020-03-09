@@ -4,7 +4,8 @@ import {
   addItemToCart,
   removeItemFromCart,
   filterItemFromCart,
-  getCartItemsCount
+  getCartItemsCount,
+  getCartTotal
 } from './cart.utils'
 
 export const CartContext = createContext({
