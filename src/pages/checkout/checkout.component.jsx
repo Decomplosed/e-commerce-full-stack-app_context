@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import { connect } from 'react-redux'
 import { createStructuredSelector } from 'reselect'
 
 import CheckoutItem from '../../components/checkout-item/checkout-item.component'
@@ -49,4 +48,4 @@ const mapStateToProps = createStructuredSelector({
   total: selectCartTotal
 })
 
-export default connect(mapStateToProps)(CheckoutPage)
+export default CheckoutPage
