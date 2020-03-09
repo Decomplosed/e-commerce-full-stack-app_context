@@ -18,4 +18,4 @@ const CollectionsOverview = () => {
   )
 }
 
-export default connect(mapStateToProps)(CollectionsOverview)
+export default CollectionsOverview
